@@ -1,12 +1,14 @@
 # es6-string-utils
 
-String utils which I created for my requirements
+Utilities, created for my requirements
 
 # installation
 
 Run `yarn add es6-string-utils` or `npm install es6-string-utils`
 
-### interpolateString
+## usages
+
+### 1. interpolateString
 
 1. `import { interpolateString } from 'es6-string-utils'`
 
