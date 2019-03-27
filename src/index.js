@@ -1,0 +1,1 @@
+export { interpolateString } from './interpolateString';

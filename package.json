@@ -1,18 +1,30 @@
 {
   "name": "es6-string-utils",
-  "version": "0.0.5",
-  "main": "index.js",
+  "version": "0.0.6",
+  "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "transpile": "node_modules/@babel/cli/bin/babel.js src -d dist --copy-files",
+    "prepublishOnly": "npm run transpile"
   },
   "dependencies": {
     "lodash": "^4.17.11"
   },
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
     "babel-jest": "^24.5.0",
     "jest": "^24.5.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akuntal/es6-string-utils.git"
+  },
+  "keywords": [
+    "javascript",
+    "string",
+    "interpolate"
+  ]
 }

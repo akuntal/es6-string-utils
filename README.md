@@ -1,6 +1,6 @@
 # es6-string-utils
 
-Utilities, created for my requirements
+Javascript utilities
 
 # installation
 
@@ -10,10 +10,17 @@ Run `yarn add es6-string-utils` or `npm install es6-string-utils`
 
 ### 1. interpolateString
 
-1. `import { interpolateString } from 'es6-string-utils'`
+```
+   import { interpolateString } from 'es6-string-utils';
 
-2. `const rawString = 'Welcome [Person.name.first] from [Person.city] !!!'`
+   const rawString = 'Welcome [Person.name.first] from [Person.city] !!!';
 
-3. `const locale = { Person: { name: { first: 'Raj' }, city: 'New Delhi' } };`
+   const locale = { Person: { name: { first: 'Raj' }, city: 'New Delhi' } };
 
-4. `const parsedString = interpolateString(rawString, locale);`
+   const parsedString = interpolateString(rawString, locale);
+
+   console.log(parsedString);
+
+   // Welcome Raj from New Delhi !!!
+
+```
